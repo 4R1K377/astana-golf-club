@@ -1,0 +1,200 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page - Astana Golf Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- preconnect to font origin -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- preload critical assets -->
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="preload" href="assets/fonts/MrsEavesLiningOT.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/images/branding/logo-white.webp" as="image" type="image/webp">
+  <link rel="preload" href="assets/images/hero/home-hero-video.mp4" as="video" type="video/mp4">
+
+  <!-- dns-prefetch for non-critical origins -->
+  <link rel="dns-prefetch" href="https://www.instagram.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bar">
+      <a href="index.html" class="logo">
+        <img src="assets/images/branding/logo-white.webp" alt="Astana Golf Club logo" data-logo-default="assets/images/branding/logo-white.webp" data-logo-solid="assets/images/branding/logo-black.webp" width="120" height="75">
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="desktop-nav-item" href="golf.html">Golf</a>
+        <a class="desktop-nav-item" href="dining.html">Dining</a>
+        <a class="desktop-nav-item" href="meetings.html">Meetings</a>
+        <a class="desktop-nav-item" href="about.html">About</a>
+        <a class="desktop-nav-item" href="tournaments.html">Tournaments</a>
+      </nav>
+      <div class="header-right">
+        <a href="tel:+77029994308" class="desktop-book-button">Book Now</a>
+        <div class="menu-toggle" role="button" tabindex="0" aria-expanded="false" aria-haspopup="true" aria-label="Main menu" aria-controls="main-navigation">
+          <div class="menu-header">
+            <span class="menu-label">MENU</span>
+            <span class="menu-icon" aria-hidden="true">
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+            </span>
+          </div>
+          <nav id="main-navigation" class="menu-items" aria-label="Main navigation" aria-hidden="true">
+            <a class="menu-item" href="golf.html">Golf</a>
+            <a class="menu-item" href="dining.html">Dining</a>
+            <a class="menu-item" href="meetings.html">Meetings</a>
+            <a class="menu-item" href="about.html">About</a>
+            <a class="menu-item" href="tournaments.html">Tournaments</a>
+            <a class="menu-item" href="tel:+77029994308">Book Now</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header-underline"></div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Astana Golf Club hero video">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="assets/images/hero/home-hero-poster.webp"
+        fetchpriority="high"
+      >
+        <source src="assets/images/hero/home-hero-video.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-subtitle">Welcome to</p>
+        <p class="hero-title">Astana Golf Club</p>
+      </div>
+    </section>
+
+    <section class="heritage content-section" aria-labelledby="heritage-heading">
+      <div class="heritage-inner content-section-inner">
+        <header class="heritage-header content-section-header">
+          <h2 id="heritage-heading" class="heritage-title content-section-title">Where the City Comes to Play</h2>
+          <p class="heritage-text content-section-text">
+            Just a short drive from the center of the capital, Astana Golf Club brings together championship
+            golf, a relaxed atmosphere and warm Kazakh hospitality. Wide fairways, carefully prepared greens
+            and modern practice facilities make the club welcoming both for newcomers to the game and for
+            experienced players who train regularly and compete in tournaments. Beyond the course, guests enjoy
+            a clubhouse with panoramic views, a restaurant and terrace, a pro shop and spaces for family days,
+            corporate events and private celebrations – everything you need to spend the whole day in one place.
+          </p>
+          <a href="tel:+77029994308" class="primary-button heritage-cta">Plan Your Visit</a>
+        </header>
+
+        <article class="heritage-feature">
+          <div class="heritage-feature-image-wrapper">
+            <img src="assets/images/course/clubhouse-facilities.webp" alt="View of Astana Golf Club facilities" class="heritage-feature-image" loading="lazy" decoding="async" width="800" height="533">
+          </div>
+          <div class="heritage-feature-content">
+            <p class="heritage-feature-label">About the Club</p>
+            <h3 class="heritage-feature-title">Golf, Dining and Events in One Destination</h3>
+            <p class="heritage-feature-text">
+              At Astana Golf Club, an 18-hole course, driving range and short-game areas sit alongside a
+              modern clubhouse, restaurant and pro shop. Players can start the day on the practice range,
+              head out for a relaxed round or friendly competition, and finish with dinner overlooking the
+              course. The club regularly hosts member tournaments, junior programs, business events and family
+              celebrations, creating a community around the game and a welcoming place to spend time together
+              on and off the fairways.
+            </p>
+            <a href="golf.html" class="primary-button heritage-feature-button">Explore the Club</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="moments content-section" aria-labelledby="moments-heading">
+      <div class="moments-inner content-section-inner">
+        <header class="moments-header content-section-header">
+          <h2 id="moments-heading" class="moments-title content-section-title">Play A Round, Share Around.</h2>
+          <p class="moments-text content-section-text">See what other players are doing and share your own Astana Golf Club adventures.</p>
+          <a href="https://www.instagram.com/golf_club_astana/" class="primary-button moments-button" target="_blank" rel="noopener noreferrer">Share the Moment</a>
+        </header>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="site-footer-inner">
+      <div class="footer-main">
+        <div class="footer-left">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/branding/logo-white.webp" alt="Astana Golf Club logo" loading="lazy" decoding="async" width="140" height="88">
+          </a>
+          <p class="footer-address">
+            Khayretidin Bolganbaev Street, 1,<br>
+            Astana, Kazakhstan
+          </p>
+          <a class="footer-phone" href="tel:+77029994308">+7 702 999 4308</a>
+        </div>
+
+        <div class="footer-links" aria-label="Footer navigation">
+          <section class="footer-column" aria-labelledby="footer-golf-heading">
+            <h2 id="footer-golf-heading" class="footer-title">Golf</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="golf.html#golf-course-heading">Course Layout</a></li>
+              <li><a class="footer-link" href="golf.html#pricing-heading">Prices</a></li>
+              <li><a class="footer-link" href="golf.html#pricing-heading">Membership</a></li>
+              <li><a class="footer-link" href="golf.html#golf-course-heading">Golfer's Guide</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-column" aria-labelledby="footer-restaurant-heading">
+            <h2 id="footer-restaurant-heading" class="footer-title">Restaurant</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="dining.html#heritage-heading">Menu</a></li>
+              <li><a class="footer-link" href="meetings.html#heritage-heading">Banquets &amp; Events</a></li>
+              <li><a class="footer-link" href="dining.html#heritage-heading">Reservations</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-column" aria-labelledby="footer-about-heading">
+            <h2 id="footer-about-heading" class="footer-title">About</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="about.html#about-our-story">Our Story</a></li>
+              <li><a class="footer-link" href="about.html#about-team">Team</a></li>
+              <li><a class="footer-link" href="about.html#about-careers">Careers</a></li>
+              <li><a class="footer-link" href="about.html#about-heading">Contact Us</a></li>
+              <li><a class="footer-link" href="about.html#faq-section">FAQ</a></li>
+              <li><a class="footer-link" href="tournaments.html">Tournaments</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span class="footer-copy">&copy; Astana Golf Club 2025</span>
+        </div>
+
+        <div class="footer-bottom-right">
+          <a href="https://www.instagram.com/golf_club_astana/" class="footer-social-link" aria-label="Astana Golf Club on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+              <circle cx="12" cy="12" r="5"></circle>
+              <circle cx="17" cy="7" r="1.4"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!-- meetings.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Meetings - Astana Golf Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="preload" href="assets/fonts/MrsEavesLiningOT.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/images/branding/logo-white.webp" as="image" type="image/webp">
+  <link rel="preload" href="assets/images/hero/meetings-page-hero.webp" as="image" type="image/webp" fetchpriority="high">
+
+  <link rel="dns-prefetch" href="https://www.instagram.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bar">
+      <a href="index.html" class="logo">
+        <img src="assets/images/branding/logo-white.webp" alt="Astana Golf Club logo" data-logo-default="assets/images/branding/logo-white.webp" data-logo-solid="assets/images/branding/logo-black.webp" width="120" height="75">
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="desktop-nav-item" href="golf.html">Golf</a>
+        <a class="desktop-nav-item" href="dining.html">Dining</a>
+        <a class="desktop-nav-item" href="meetings.html">Meetings</a>
+        <a class="desktop-nav-item" href="about.html">About</a>
+        <a class="desktop-nav-item" href="tournaments.html">Tournaments</a>
+      </nav>
+      <div class="header-right">
+        <a href="tel:+77029994308" class="desktop-book-button">Book Now</a>
+        <div class="menu-toggle" role="button" tabindex="0" aria-expanded="false" aria-haspopup="true" aria-label="Main menu" aria-controls="main-navigation">
+          <div class="menu-header">
+            <span class="menu-label">MENU</span>
+            <span class="menu-icon" aria-hidden="true">
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+            </span>
+          </div>
+          <nav id="main-navigation" class="menu-items" aria-label="Main navigation" aria-hidden="true">
+            <a class="menu-item" href="golf.html">Golf</a>
+            <a class="menu-item" href="dining.html">Dining</a>
+            <a class="menu-item" href="meetings.html">Meetings</a>
+            <a class="menu-item" href="about.html">About</a>
+            <a class="menu-item" href="tournaments.html">Tournaments</a>
+            <a class="menu-item" href="tel:+77029994308">Book Now</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header-underline"></div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Astana Golf Club hero image">
+      <img class="hero-image" src="assets/images/hero/meetings-page-hero.webp" alt="Golf Club Pic" fetchpriority="high" decoding="sync">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-title">Meetings</p>
+      </div>
+    </section>
+
+    <section class="heritage content-section" aria-labelledby="heritage-heading">
+      <div class="heritage-inner content-section-inner">
+        <header class="heritage-header content-section-header">
+          <h2 id="heritage-heading" class="heritage-title content-section-title">The Clubhouse</h2>
+          <p class="heritage-text content-section-text">
+            The Astana Golf Club clubhouse is a classy and inviting place for meetings and private parties. Since it was made to be comfortable and is right on the course, it offers a peaceful setting away from the city. This makes it perfect for focused talks, celebrations, and get-togethers.
+          </p>
+          <p class="heritage-text content-section-text">
+            The clubhouse is a good place for both official and informal gatherings because the room layout can be changed to fit different needs and the staff is always ready to help.
+          </p>
+        </header>
+
+        <div class="layout meetings-venues">
+          <aside class="sidebar" aria-label="Meeting venues menu">
+            <div class="sidebar__header">
+              <h1 class="sidebar__title">
+                <span>Meeting</span>
+                <span>Venues</span>
+              </h1>
+              <div class="sidebar__underline" aria-hidden="true"></div>
+            </div>
+
+            <nav class="sidebar__nav">
+              <button class="venue-link active" data-venue="karaoke-lounge" type="button">VIP KARAOKE LOUNGE</button>
+
+              <button class="venue-link" data-venue="banquet-hall" type="button">
+                <span class="wrap">Banquet Hall with Terrace</span>
+              </button>
+            </nav>
+          </aside>
+
+          <main class="content" aria-live="polite">
+            <h2 class="content__title" id="venueTitle">VIP KARAOKE LOUNGE</h2>
+            <p class="content__text" id="venueText">
+              Our VIP Karaoke Lounge is an exclusive private space designed for premium entertainment and comfort. The room combines a stylish living-room atmosphere with a high-end karaoke and home cinema setup, making it ideal for private celebrations, business gatherings, or relaxed evenings with friends. The lounge features spacious seating areas with soft sofas, a large screen with professional sound system, and elegant interior details that create a warm yet modern ambiance. A private dining table allows guests to enjoy food and drinks without leaving the room, ensuring complete privacy and convenience. Perfect for birthdays, small corporate events, or intimate parties, the VIP Karaoke Lounge offers a refined experience where entertainment and comfort come together seamlessly. Seating Capacity: 16 people
+            </p>
+
+            <section class="venue-slider" aria-label="Venue photo slider">
+              <div class="venue-slider__wrapper is-3" id="venueSlider">
+                <input checked type="radio" name="slider" id="slide1" />
+                <input type="radio" name="slider" id="slide2" />
+                <input type="radio" name="slider" id="slide3" />
+                <input type="radio" name="slider" id="slide4" />
+                <input type="radio" name="slider" id="slide5" />
+                <input type="radio" name="slider" id="slide6" />
+
+                <div class="slider-area">
+                  <div class="slider-wrapper">
+                    <div class="inner">
+                      <article><img id="slideImg1" src="" alt="" loading="lazy" decoding="async" /></article>
+                      <article><img id="slideImg2" src="" alt="" loading="lazy" decoding="async" /></article>
+                      <article><img id="slideImg3" src="" alt="" loading="lazy" decoding="async" /></article>
+                      <article><img id="slideImg4" src="" alt="" loading="lazy" decoding="async" /></article>
+                      <article><img id="slideImg5" src="" alt="" loading="lazy" decoding="async" /></article>
+                      <article><img id="slideImg6" src="" alt="" loading="lazy" decoding="async" /></article>
+                    </div>
+                  </div>
+
+                  <div class="slider-prev-next-control" aria-hidden="true">
+                    <label for="slide1" aria-label="Go to slide 1"></label>
+                    <label for="slide2" aria-label="Go to slide 2"></label>
+                    <label for="slide3" aria-label="Go to slide 3"></label>
+                    <label for="slide4" aria-label="Go to slide 4"></label>
+                    <label for="slide5" aria-label="Go to slide 5"></label>
+                    <label for="slide6" aria-label="Go to slide 6"></label>
+                  </div>
+
+                  <div class="slider-dot-control" aria-label="Slide navigation">
+                    <label for="slide1" aria-label="Slide 1"></label>
+                    <label for="slide2" aria-label="Slide 2"></label>
+                    <label for="slide3" aria-label="Slide 3"></label>
+                    <label for="slide4" aria-label="Slide 4"></label>
+                    <label for="slide5" aria-label="Slide 5"></label>
+                    <label for="slide6" aria-label="Slide 6"></label>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="site-footer-inner">
+      <div class="footer-main">
+        <div class="footer-left">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/branding/logo-white.webp" alt="Astana Golf Club logo" loading="lazy" decoding="async" width="140" height="88">
+          </a>
+          <p class="footer-address">
+            Khayretidin Bolganbaev Street, 1,<br>
+            Astana, Kazakhstan
+          </p>
+          <a class="footer-phone" href="tel:+77029994308">+7 702 999 4308</a>
+        </div>
+        <div class="footer-links" aria-label="Footer navigation">
+          <section class="footer-column" aria-labelledby="footer-golf-heading">
+            <h2 id="footer-golf-heading" class="footer-title">Golf</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="golf.html#golf-course-heading">Course Layout</a></li>
+              <li><a class="footer-link" href="golf.html#pricing-heading">Prices</a></li>
+              <li><a class="footer-link" href="golf.html#pricing-heading">Membership</a></li>
+              <li><a class="footer-link" href="golf.html#golf-course-heading">Golfer's Guide</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-column" aria-labelledby="footer-restaurant-heading">
+            <h2 id="footer-restaurant-heading" class="footer-title">Restaurant</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="dining.html#heritage-heading">Menu</a></li>
+              <li><a class="footer-link" href="meetings.html#heritage-heading">Banquets &amp; Events</a></li>
+              <li><a class="footer-link" href="dining.html#heritage-heading">Reservations</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-column" aria-labelledby="footer-about-heading">
+            <h2 id="footer-about-heading" class="footer-title">About</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="about.html#about-our-story">Our Story</a></li>
+              <li><a class="footer-link" href="about.html#about-team">Team</a></li>
+              <li><a class="footer-link" href="about.html#about-careers">Careers</a></li>
+              <li><a class="footer-link" href="about.html#about-heading">Contact Us</a></li>
+              <li><a class="footer-link" href="about.html#faq-section">FAQ</a></li>
+              <li><a class="footer-link" href="tournaments.html">Tournaments</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span class="footer-copy">&copy; Astana Golf Club 2025</span>
+        </div>
+
+        <div class="footer-bottom-right">
+          <a href="https://www.instagram.com/golf_club_astana/" class="footer-social-link" aria-label="Astana Golf Club on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+              <circle cx="12" cy="12" r="5"></circle>
+              <circle cx="17" cy="7" r="1.4"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

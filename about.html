@@ -1,0 +1,292 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Astana Golf Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="preload" href="assets/fonts/MrsEavesLiningOT.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/images/branding/logo-white.webp" as="image" type="image/webp">
+  <link rel="preload" href="assets/images/hero/about-page-hero.webp" as="image" type="image/webp" fetchpriority="high">
+
+  <link rel="dns-prefetch" href="https://www.instagram.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bar">
+      <a href="index.html" class="logo">
+        <img src="assets/images/branding/logo-white.webp" alt="Astana Golf Club logo" data-logo-default="assets/images/branding/logo-white.webp" data-logo-solid="assets/images/branding/logo-black.webp" width="120" height="75">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="desktop-nav-item" href="golf.html">Golf</a>
+        <a class="desktop-nav-item" href="dining.html">Dining</a>
+        <a class="desktop-nav-item" href="meetings.html">Meetings</a>
+        <a class="desktop-nav-item" href="about.html">About</a>
+        <a class="desktop-nav-item" href="tournaments.html">Tournaments</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="tel:+77029994308" class="desktop-book-button">Book Now</a>
+        <div class="menu-toggle" role="button" tabindex="0" aria-expanded="false" aria-haspopup="true" aria-label="Main menu" aria-controls="main-navigation">
+          <div class="menu-header">
+            <span class="menu-label">MENU</span>
+            <span class="menu-icon" aria-hidden="true">
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+            </span>
+          </div>
+
+          <nav id="main-navigation" class="menu-items" aria-label="Main navigation" aria-hidden="true">
+            <a class="menu-item" href="golf.html">Golf</a>
+            <a class="menu-item" href="dining.html">Dining</a>
+            <a class="menu-item" href="meetings.html">Meetings</a>
+            <a class="menu-item" href="about.html">About</a>
+            <a class="menu-item" href="tournaments.html">Tournaments</a>
+            <a class="menu-item" href="tel:+77029994308">Book Now</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header-underline"></div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Astana Golf Club About hero image">
+      <img class="hero-image" src="assets/images/hero/about-page-hero.webp" alt="Astana Golf Club" fetchpriority="high" decoding="sync">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-title">About</p>
+      </div>
+    </section>
+
+    <section class="about content-section" aria-labelledby="about-heading">
+      <div class="about-inner content-section-inner">
+        <header class="about-header content-section-header">
+          <h2 id="about-heading" class="about-title content-section-title">About Us</h2>
+          <p class="about-text content-section-text">
+            Discover the club's story, our values, and the people behind the experience. Here you'll find an introduction
+            to our heritage, facilities, and what makes Astana Golf Club a place to play, meet, and unwind.
+          </p>
+        </header>
+
+        <div class="about-features" aria-label="About highlights">
+          <article id="about-our-story" class="heritage-feature about-feature">
+            <div class="heritage-feature-image-wrapper">
+              <img src="assets/images/about/about-our-story.webp" alt="Astana Golf Club championship golf course and surrounding steppe landscape" class="heritage-feature-image" loading="lazy" decoding="async" width="800" height="500">
+            </div>
+            <div class="heritage-feature-content">
+              <h3 class="heritage-feature-title">Our Story</h3>
+              <p class="heritage-feature-text">
+                Astana Golf Club is the best place to play golf in Kazakhstan, and it's located on the edge of the city of Astana. It offers top-notch sports and elegant relaxation. The club was built to international standards and is located just minutes from the capital city in an expansive steppe landscape. It gives golfers an amazing experience. The 18-hole championship course at Astana Golf Club was designed to be difficult for professional players but fun for golfers of all skill levels. In addition to the fairways, the club has a modern clubhouse, fine dining, practice areas, and places for private events. Astana Golf Club was built to raise the level of golf culture in the area. It has become a center for sports, society, and business, and its members and guests experience tradition and innovation in every detail.
+              </p>
+            </div>
+          </article>
+
+          <article id="about-team" class="heritage-feature about-feature">
+            <div class="heritage-feature-content">
+              <h3 class="heritage-feature-title">Team</h3>
+              <p class="heritage-feature-text">
+                The people who work and play there every day shape what Astana Golf Club is like. Our team is made up of a wide range of professionals who truly love golf, hospitality, and making important memories. Each person helps to create the club's mood, whether they are looking after the course, greeting visitors, planning activities, or helping members out of sight. We are all linked by our desire to pay close attention to things, honor the past, and make sure that every visit feels familiar and easy. We build a place where the spirit of the game is matched by warmth, professionalism, and pride in our work.
+              </p>
+            </div>
+            <div class="heritage-feature-image-wrapper">
+              <img src="assets/images/about/about-team.webp" alt="Astana Golf Club team members working at the clubhouse and course" class="heritage-feature-image" loading="lazy" decoding="async" width="800" height="500">
+            </div>
+          </article>
+
+          <article id="about-careers" class="heritage-feature about-feature">
+            <div class="heritage-feature-image-wrapper">
+              <img src="assets/images/about/about-careers.webp" alt="Astana Golf Club practice range and professional coaching session" class="heritage-feature-image" loading="lazy" decoding="async" width="800" height="500">
+            </div>
+            <div class="heritage-feature-content">
+              <h3 class="heritage-feature-title">Careers</h3>
+              <p class="heritage-feature-text">
+                The Astana Golf Club makes its members feel valued, trusted, and motivated. We think that a good team culture where everyone's work is valued is the best way to start providing great service. Our club is a place for people who value quality, enjoy their work, and like being part of something elegant but friendly. The Astana Golf Club is a one-of-a-kind place where you can grow your career while having a calm and balanced work life, since it is located in an open landscape.
+              </p>
+            </div>
+          </article>
+
+          <article class="heritage-feature about-feature">
+            <div class="heritage-feature-content">
+              <h3 class="heritage-feature-title">Growth &amp; Development</h3>
+              <p class="heritage-feature-text">
+                We believe in growing together at Astana Golf Club. Members of the team are urged to learn new things, take on duties, and look at other parts of the club. We believe that doing things by hand, internal training, and learning about how golf and hospitality are done around the world are all great ways to learn. Many jobs allow you to grow personally and professionally in a friendly and work-like setting.
+              </p>
+            </div>
+            <div class="heritage-feature-image-wrapper">
+              <img src="assets/images/about/about-growth-development.webp" alt="Astana Golf Club events, tournaments, and community gatherings" class="heritage-feature-image" loading="lazy" decoding="async" width="800" height="500">
+            </div>
+          </article>
+        </div>
+
+        <div id="faq-section" class="faq-header content-section-title">FAQs</div>
+        <div class="faq-content">
+          <div class="faq-section">
+            <div class="faq-section-title">Golf</div>
+
+            <div class="faq-question">
+              <input id="q1" type="checkbox" class="panel">
+              <label for="q1" class="plus">+</label>
+              <label for="q1" class="panel-title">How do I book my tee time?</label>
+              <div class="panel-content">Tee times can be booked by phone, or in person at the clubhouse. We recommend booking in advance, especially on weekends and during peak season.</div>
+            </div>
+
+            <div class="faq-question">
+              <input id="q2" type="checkbox" class="panel">
+              <label for="q2" class="plus">+</label>
+              <label for="q2" class="panel-title">What are the green fee prices?</label>
+              <div class="panel-content">Please see <a href="golf.html#pricing-heading">Rates</a> for our green fees.</div>
+            </div>
+
+            <div class="faq-question">
+              <input id="q3" type="checkbox" class="panel">
+              <label for="q3" class="plus">+</label>
+              <label for="q3" class="panel-title">Are there golf carts?</label>
+              <div class="panel-content">Yes. Golf carts are available for rent and can be requested when booking your tee time or upon arrival, subject to availability.</div>
+            </div>
+
+            <div class="faq-question"><input id="q4" type="checkbox" class="panel"><label for="q4" class="plus">+</label><label for="q4" class="panel-title">Can I walk the course, or are carts required?</label><div class="panel-content">Walking the course is welcome at Astana Golf Club. Golf carts are available for rent but are not required, unless otherwise specified due to course conditions or special events.</div></div>
+            <div class="faq-question"><input id="q5" type="checkbox" class="panel"><label for="q5" class="plus">+</label><label for="q5" class="panel-title">What kind of clubs can I rent?</label><div class="panel-content">We offer high-quality rental club sets suitable for different playing styles and skill levels. Availability may be limited, so advance reservation is recommended.</div></div>
+            <div class="faq-question"><input id="q6" type="checkbox" class="panel"><label for="q6" class="plus">+</label><label for="q6" class="panel-title">Do you have caddies?</label><div class="panel-content">Caddie services may be available upon request. Availability can vary, so we recommend contacting the club in advance to arrange this service.</div></div>
+            <div class="faq-question"><input id="q7" type="checkbox" class="panel"><label for="q7" class="plus">+</label><label for="q7" class="panel-title">Do you have to have a minimum handicap to play the course?</label><div class="panel-content">No minimum handicap is required. Golfers of all skill levels are welcome, and beginners are encouraged to enjoy the course while respecting pace of play and course etiquette.</div></div>
+            <div class="faq-question"><input id="q8" type="checkbox" class="panel"><label for="q8" class="plus">+</label><label for="q8" class="panel-title">What is your pace-of-play policy?</label><div class="panel-content">To ensure an enjoyable experience for all golfers, the recommended pace of play for 18 holes is approximately 4 hours and 20 minutes. Players are expected to keep pace with the group ahead and follow any guidance provided by course staff.</div></div>
+            <div class="faq-question"><input id="q9" type="checkbox" class="panel"><label for="q9" class="plus">+</label><label for="q9" class="panel-title">Are juniors allowed on the course?</label><div class="panel-content">Yes. Juniors are welcome to play at Astana Golf Club when accompanied by an adult or with appropriate supervision, depending on age and experience.</div></div>
+            <div class="faq-question"><input id="q10" type="checkbox" class="panel"><label for="q10" class="plus">+</label><label for="q10" class="panel-title">Do you allow spectators on the course?</label><div class="panel-content">Yes. Spectators are allowed, provided they do not distract players or interfere with play.</div></div>
+            <div class="faq-question"><input id="q11" type="checkbox" class="panel"><label for="q11" class="plus">+</label><label for="q11" class="panel-title">Are practice facilities open to non-golfers?</label><div class="panel-content">Yes. Practice facilities may be used by both golfers and non-golfers, subject to availability and applicable fees.</div></div>
+            <div class="faq-question"><input id="q12" type="checkbox" class="panel"><label for="q12" class="plus">+</label><label for="q12" class="panel-title">What is the dress code for golf at Astana Golf Club?</label><div class="panel-content">We recommend collared shirts and well-kept trousers or tailored shorts with a belt. Denim, open-toe shoes, or sandals are not permitted on the golf course or practice facilities.</div></div>
+            <div class="faq-question"><input id="q13" type="checkbox" class="panel"><label for="q13" class="plus">+</label><label for="q13" class="panel-title">When does your golf season run?</label><div class="panel-content">The golf season at Astana Golf Club is weather-dependent and typically runs from spring through autumn. Opening and closing dates may vary each year based on course conditions.</div></div>
+            <div class="faq-question"><input id="q14" type="checkbox" class="panel"><label for="q14" class="plus">+</label><label for="q14" class="panel-title">What happens if it rains and I have a round of golf booked?</label><div class="panel-content">Play continues in light rain. In the event of severe weather or unsafe conditions, the club may suspend play. Our team will assist with rescheduling or alternative arrangements where possible.</div></div>
+          </div>
+
+          <div class="faq-section">
+            <div class="faq-section-title">Bookings &amp; Inquiries</div>
+            <div class="faq-question"><input id="q15" type="checkbox" class="panel"><label for="q15" class="plus">+</label><label for="q15" class="panel-title">Are taxes and service fees included?</label><div class="panel-content">All applicable taxes and service fees are included in the final price unless otherwise stated. Any additional charges will be clearly communicated at the time of booking.</div></div>
+            <div class="faq-question"><input id="q16" type="checkbox" class="panel"><label for="q16" class="plus">+</label><label for="q16" class="panel-title">What currency do you accept? Do you accept cards?</label><div class="panel-content">All payments at Astana Golf Club are processed in Kazakhstani tenge (KZT). Major credit and debit cards are accepted. For international payments or special arrangements, please contact the club in advance.</div></div>
+            <div class="faq-question"><input id="q17" type="checkbox" class="panel"><label for="q17" class="plus">+</label><label for="q17" class="panel-title">Is there a no-show policy?</label><div class="panel-content">Currently, Astana Golf Club does not operate with fixed tee time bookings, so a no-show policy does not apply.</div></div>
+            <div class="faq-question"><input id="q18" type="checkbox" class="panel"><label for="q18" class="plus">+</label><label for="q18" class="panel-title">Do you offer seasonal packages or promotions?</label><div class="panel-content">Yes. Astana Golf Club offers seasonal packages and special promotions throughout the year. Current offers are shared on our website and through official communication channels.</div></div>
+          </div>
+
+          <div class="faq-section">
+            <div class="faq-section-title">Getting To / From</div>
+            <div class="faq-question"><input id="q19" type="checkbox" class="panel"><label for="q19" class="plus">+</label><label for="q19" class="panel-title">Where can I find directions to Astana Golf Club?</label><div class="panel-content">Click here for directions to Astana Golf Club: <a href="https://www.google.com/maps/search/?api=1&amp;query=51.108952,71.572776" target="_blank" rel="noopener noreferrer">Google Maps</a> / <a href="https://2gis.kz/astana/directions/points/%7C71.572776%2C51.108952%3B70000001065121814" target="_blank" rel="noopener noreferrer">2GIS</a>.</div></div>
+            <div class="faq-question"><input id="q20" type="checkbox" class="panel"><label for="q20" class="plus">+</label><label for="q20" class="panel-title">How do I get to Astana Golf Club?</label><div class="panel-content">Astana Golf Club is located just outside the city and can be easily reached by car or taxi. The club is well connected and accessible from central Astana.</div></div>
+            <div class="faq-question"><input id="q21" type="checkbox" class="panel"><label for="q21" class="plus">+</label><label for="q21" class="panel-title">What airports are nearby?</label><div class="panel-content">The nearest airport is Nursultan Nazarbayev International Airport (NQZ), which is located within a convenient driving distance from the club.</div></div>
+            <div class="faq-question"><input id="q22" type="checkbox" class="panel"><label for="q22" class="plus">+</label><label for="q22" class="panel-title">Can taxis and ride-hailing services access the club easily?</label><div class="panel-content">Yes. Taxis and ride-hailing services can access the club directly and drop off guests at the clubhouse entrance.</div></div>
+            <div class="faq-question"><input id="q23" type="checkbox" class="panel"><label for="q23" class="plus">+</label><label for="q23" class="panel-title">Is there parking on the property?</label><div class="panel-content">Parking at Astana Golf Club is complimentary for members and guests. We offer ample parking spaces conveniently located near the clubhouse and main facilities.<br><br>Valet parking is not available.</div></div>
+            <div class="faq-question"><input id="q24" type="checkbox" class="panel"><label for="q24" class="plus">+</label><label for="q24" class="panel-title">Are electric vehicle charging stations available?</label><div class="panel-content">For guests travelling with electric vehicles, 2 charging stations are available on the property. Please contact the clubhouse team for availability and further details.</div></div>
+          </div>
+
+          <div class="faq-section">
+            <div class="faq-section-title">Food &amp; Beverage</div>
+            <div class="faq-question"><input id="q25" type="checkbox" class="panel"><label for="q25" class="plus">+</label><label for="q25" class="panel-title">Where can I eat?</label><div class="panel-content">Food and beverages are primarily served at the bar and lounge near the driving range, which is the main dining area for daily visitors. The clubhouse restaurant is typically used for private events and special occasions, such as weddings, and may operate on a limited or event-based schedule.</div></div>
+            <div class="faq-question"><input id="q26" type="checkbox" class="panel"><label for="q26" class="plus">+</label><label for="q26" class="panel-title">Is there a bar or lounge area?</label><div class="panel-content">Yes. Astana Golf Club offers a bar and lounge area located near the driving range, where guests can relax and enjoy drinks in a comfortable setting.</div></div>
+            <div class="faq-question"><input id="q27" type="checkbox" class="panel"><label for="q27" class="plus">+</label><label for="q27" class="panel-title">Is there a dress code?</label><div class="panel-content">Smart casual attire is recommended in the clubhouse and bar &amp; lounge areas. Golf attire is welcome, while overly casual or athletic wear is discouraged.</div></div>
+            <div class="faq-question"><input id="q28" type="checkbox" class="panel"><label for="q28" class="plus">+</label><label for="q28" class="panel-title">Who can visit the bar and lounge?</label><div class="panel-content">The bar and lounge near the driving range is open to both golfers and non-golfers during regular operating hours.</div></div>
+            <div class="faq-question"><input id="q29" type="checkbox" class="panel"><label for="q29" class="plus">+</label><label for="q29" class="panel-title">Is the restaurant open during the golf off-season?</label><div class="panel-content">Restaurant availability during the off-season may vary. We recommend contacting the club directly for current hours and updates.</div></div>
+            <div class="faq-question"><input id="q30" type="checkbox" class="panel"><label for="q30" class="plus">+</label><label for="q30" class="panel-title">Do you accommodate dietary restrictions or allergies?</label><div class="panel-content">Yes, whenever possible. Please inform our staff of any dietary requirements or allergies in advance so we can accommodate your needs.</div></div>
+          </div>
+
+          <div class="faq-section">
+            <div class="faq-section-title">Weddings</div>
+            <div class="faq-question"><input id="q31" type="checkbox" class="panel"><label for="q31" class="plus">+</label><label for="q31" class="panel-title">What types of wedding packages are available?</label><div class="panel-content">Astana Golf Club offers a range of flexible wedding options designed to suit different styles and guest sizes. Packages can be customized to reflect your vision, whether you are planning an intimate celebration or a larger event. For detailed information, please contact our events team.</div></div>
+            <div class="faq-question"><input id="q32" type="checkbox" class="panel"><label for="q32" class="plus">+</label><label for="q32" class="panel-title">What about wedding cakes?</label><div class="panel-content">Wedding cake options can be arranged upon request. We work with trusted partners to help create a cake that reflects your taste and style. Design, flavors, and presentation can be discussed during the planning process.</div></div>
+            <div class="faq-question"><input id="q33" type="checkbox" class="panel"><label for="q33" class="plus">+</label><label for="q33" class="panel-title">Are catering services available for my wedding?</label><div class="panel-content">Yes. Catering services are available and can be tailored to your event. Our culinary team can assist in creating menus that suit your preferences, from elegant plated dinners to lighter receptions.</div></div>
+            <div class="faq-question"><input id="q34" type="checkbox" class="panel"><label for="q34" class="plus">+</label><label for="q34" class="panel-title">What venues are available for weddings?</label><div class="panel-content">Astana Golf Club offers several indoor and outdoor spaces suitable for weddings, including scenic areas overlooking the course and elegant indoor venues. Venue availability depends on the season and event size.</div></div>
+            <div class="faq-question"><input id="q35" type="checkbox" class="panel"><label for="q35" class="plus">+</label><label for="q35" class="panel-title">Can we host both the ceremony and reception at the club?</label><div class="panel-content">Yes. Depending on availability, both the ceremony and reception can be hosted at Astana Golf Club, allowing for a seamless and memorable celebration.</div></div>
+            <div class="faq-question"><input id="q36" type="checkbox" class="panel"><label for="q36" class="plus">+</label><label for="q36" class="panel-title">How do we begin planning our wedding at Astana Golf Club?</label><div class="panel-content">To start planning, please contact our events team through the website or by phone. We will be happy to discuss availability, options, and next steps.</div></div>
+          </div>
+
+          <div class="faq-section">
+            <div class="faq-section-title">Other General Questions</div>
+            <div class="faq-question"><input id="q37" type="checkbox" class="panel"><label for="q37" class="plus">+</label><label for="q37" class="panel-title">What is the weather like?</label><div class="panel-content">Astana experiences a continental climate with warm summers and cooler shoulder seasons. Weather conditions can change quickly, so we recommend checking the forecast before your visit.</div></div>
+            <div class="faq-question"><input id="q38" type="checkbox" class="panel"><label for="q38" class="plus">+</label><label for="q38" class="panel-title">Are pets allowed?</label><div class="panel-content">Yes. Astana Golf Club is pet-friendly. Pets are welcome in outdoor areas, provided they are kept on a leash and do not disturb other guests or play on the course. Access to indoor clubhouse areas may be limited.</div></div>
+            <div class="faq-question"><input id="q39" type="checkbox" class="panel"><label for="q39" class="plus">+</label><label for="q39" class="panel-title">Are locker rooms and changing facilities available?</label><div class="panel-content">Yes. Locker rooms and changing facilities are available for guests and members.</div></div>
+            <div class="faq-question"><input id="q40" type="checkbox" class="panel"><label for="q40" class="plus">+</label><label for="q40" class="panel-title">Is photography allowed on the property?</label><div class="panel-content">Personal photography is welcome. Professional or commercial photography requires prior approval.</div></div>
+            <div class="faq-question"><input id="q41" type="checkbox" class="panel"><label for="q41" class="plus">+</label><label for="q41" class="panel-title">Do I need to be a member to visit the clubhouse?</label><div class="panel-content">No. Both members and non-members are welcome to visit the clubhouse.</div></div>
+            <div class="faq-question"><input id="q42" type="checkbox" class="panel"><label for="q42" class="plus">+</label><label for="q42" class="panel-title">Is the club suitable for first-time golfers?</label><div class="panel-content">Yes. Astana Golf Club welcomes golfers of all experience levels, including those playing for the first time.</div></div>
+            <div class="faq-question"><input id="q43" type="checkbox" class="panel"><label for="q43" class="plus">+</label><label for="q43" class="panel-title">Is there a lost and found?</label><div class="panel-content">Yes. Lost items can be reported to or collected from the clubhouse reception.</div></div>
+            <div class="faq-question"><input id="q44" type="checkbox" class="panel"><label for="q44" class="plus">+</label><label for="q44" class="panel-title">Can I bring guests with me?</label><div class="panel-content">Yes. Guests are welcome at Astana Golf Club when accompanying a member or visiting the club.</div></div>
+            <div class="faq-question"><input id="q45" type="checkbox" class="panel"><label for="q45" class="plus">+</label><label for="q45" class="panel-title">Are there smoking or vaping areas?</label><div class="panel-content">Smoking and vaping are permitted across the property. Guests are kindly asked to dispose of waste responsibly and keep the course and facilities clean.</div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="site-footer-inner">
+      <div class="footer-main">
+        <div class="footer-left">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/branding/logo-white.webp" alt="Astana Golf Club logo" loading="lazy" decoding="async" width="140" height="88">
+          </a>
+          <p class="footer-address">Khayretidin Bolganbaev Street, 1,<br>Astana, Kazakhstan</p>
+          <a class="footer-phone" href="tel:+77029994308">+7 702 999 4308</a>
+        </div>
+
+        <div class="footer-links" aria-label="Footer navigation">
+          <section class="footer-column" aria-labelledby="footer-golf-heading">
+            <h2 id="footer-golf-heading" class="footer-title">Golf</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="golf.html#golf-course-heading">Course Layout</a></li>
+              <li><a class="footer-link" href="golf.html#pricing-heading">Prices</a></li>
+              <li><a class="footer-link" href="golf.html#pricing-heading">Membership</a></li>
+              <li><a class="footer-link" href="golf.html#golf-course-heading">Golfer's Guide</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-column" aria-labelledby="footer-restaurant-heading">
+            <h2 id="footer-restaurant-heading" class="footer-title">Restaurant</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="dining.html#heritage-heading">Menu</a></li>
+              <li><a class="footer-link" href="meetings.html#heritage-heading">Banquets &amp; Events</a></li>
+              <li><a class="footer-link" href="dining.html#heritage-heading">Reservations</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-column" aria-labelledby="footer-about-heading">
+            <h2 id="footer-about-heading" class="footer-title">About</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="about.html#about-our-story">Our Story</a></li>
+              <li><a class="footer-link" href="about.html#about-team">Team</a></li>
+              <li><a class="footer-link" href="about.html#about-careers">Careers</a></li>
+              <li><a class="footer-link" href="about.html#about-heading">Contact Us</a></li>
+              <li><a class="footer-link" href="about.html#faq-section">FAQ</a></li>
+              <li><a class="footer-link" href="tournaments.html">Tournaments</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span class="footer-copy">&copy; Astana Golf Club 2025</span>
+        </div>
+
+        <div class="footer-bottom-right">
+          <a href="https://www.instagram.com/golf_club_astana/" class="footer-social-link" aria-label="Astana Golf Club on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+              <circle cx="12" cy="12" r="5"></circle>
+              <circle cx="17" cy="7" r="1.4"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

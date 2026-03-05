@@ -1,0 +1,365 @@
+<!-- golf.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Golf - Astana Golf Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- preload critical assets -->
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="preload" href="assets/fonts/MrsEavesLiningOT.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/images/branding/logo-white.webp" as="image" type="image/webp">
+  <link rel="preload" href="assets/images/hero/golf-page-hero.webp" as="image" type="image/webp" fetchpriority="high">
+
+  <link rel="dns-prefetch" href="https://www.instagram.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bar">
+      <a href="index.html" class="logo">
+        <img src="assets/images/branding/logo-white.webp" alt="Astana Golf Club logo" data-logo-default="assets/images/branding/logo-white.webp" data-logo-solid="assets/images/branding/logo-black.webp" width="120" height="75">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="desktop-nav-item" href="golf.html">Golf</a>
+        <a class="desktop-nav-item" href="dining.html">Dining</a>
+        <a class="desktop-nav-item" href="meetings.html">Meetings</a>
+        <a class="desktop-nav-item" href="about.html">About</a>
+        <a class="desktop-nav-item" href="tournaments.html">Tournaments</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="tel:+77029994308" class="desktop-book-button">Book Now</a>
+
+        <div class="menu-toggle" role="button" tabindex="0" aria-expanded="false" aria-haspopup="true" aria-label="Main menu" aria-controls="main-navigation">
+          <div class="menu-header">
+            <span class="menu-label">MENU</span>
+            <span class="menu-icon" aria-hidden="true">
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+            </span>
+          </div>
+
+          <nav id="main-navigation" class="menu-items" aria-label="Main navigation" aria-hidden="true">
+            <a class="menu-item" href="golf.html">Golf</a>
+            <a class="menu-item" href="dining.html">Dining</a>
+            <a class="menu-item" href="meetings.html">Meetings</a>
+            <a class="menu-item" href="about.html">About</a>
+            <a class="menu-item" href="tournaments.html">Tournaments</a>
+            <a class="menu-item" href="tel:+77029994308">Book Now</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header-underline"></div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Astana Golf Club hero image">
+      <img class="hero-image" src="assets/images/hero/golf-page-hero.webp" alt="Golf Club Pic" fetchpriority="high" decoding="sync">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-title">Golf</p>
+      </div>
+    </section>
+
+    <section class="about content-section" aria-labelledby="golf-course-heading">
+      <div class="about-inner content-section-inner">
+        <header class="about-header content-section-header">
+          <h2 id="golf-course-heading" class="about-title content-section-title">Golf Course Hole Tours</h2>
+          <p class="about-text content-section-text">Explore each hole of Astana Golf Club with a quick visual preview and a dedicated View Info. Choose a hole to get a feel for the layout, strategy and views before you step onto the tee.</p>
+        </header>
+
+        <div class="holes-grid">
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-01-preview.jpg" alt="Hole 1 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 1</span><button class="hole-tour hole-tour-button" type="button" data-hole="1">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-02-preview.jpg" alt="Hole 2 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 2</span><button class="hole-tour hole-tour-button" type="button" data-hole="2">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-03-preview.jpg" alt="Hole 3 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 3</span><button class="hole-tour hole-tour-button" type="button" data-hole="3">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-04-preview.jpg" alt="Hole 4 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 4</span><button class="hole-tour hole-tour-button" type="button" data-hole="4">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-05-preview.jpg" alt="Hole 5 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 5</span><button class="hole-tour hole-tour-button" type="button" data-hole="5">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-06-preview.jpg" alt="Hole 6 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 6</span><button class="hole-tour hole-tour-button" type="button" data-hole="6">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-07-preview.jpg" alt="Hole 7 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 7</span><button class="hole-tour hole-tour-button" type="button" data-hole="7">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-08-preview.jpg" alt="Hole 8 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 8</span><button class="hole-tour hole-tour-button" type="button" data-hole="8">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-09-preview.jpg" alt="Hole 9 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 9</span><button class="hole-tour hole-tour-button" type="button" data-hole="9">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-10-preview.jpg" alt="Hole 10 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 10</span><button class="hole-tour hole-tour-button" type="button" data-hole="10">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-11-preview.jpg" alt="Hole 11 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 11</span><button class="hole-tour hole-tour-button" type="button" data-hole="11">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-12-preview.jpg" alt="Hole 12 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 12</span><button class="hole-tour hole-tour-button" type="button" data-hole="12">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-13-preview.jpg" alt="Hole 13 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 13</span><button class="hole-tour hole-tour-button" type="button" data-hole="13">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-14-preview.jpg" alt="Hole 14 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 14</span><button class="hole-tour hole-tour-button" type="button" data-hole="14">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-15-preview.jpg" alt="Hole 15 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 15</span><button class="hole-tour hole-tour-button" type="button" data-hole="15">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-16-preview.jpg" alt="Hole 16 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 16</span><button class="hole-tour hole-tour-button" type="button" data-hole="16">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-17-preview.jpg" alt="Hole 17 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 17</span><button class="hole-tour hole-tour-button" type="button" data-hole="17">View Info</button></div></article>
+          <article class="hole-card"><div class="hole-image-wrapper"><img src="assets/images/holes/hole-18-preview.jpg" alt="Hole 18 preview" class="hole-image" loading="lazy" decoding="async" width="300" height="400"></div><div class="hole-meta"><span class="hole-name">Hole 18</span><button class="hole-tour hole-tour-button" type="button" data-hole="18">View Info</button></div></article>
+        </div>
+
+        <section class="course-stats" aria-label="Course yardage and ratings">
+          <div class="course-stats-layout">
+            <section class="course-stats-main" aria-labelledby="yardage-heading">
+              <header class="course-stats-header">
+                <h2 id="yardage-heading" class="course-stats-title">Yardage &amp; Ratings</h2>
+                <button class="course-section-toggle" type="button" aria-expanded="true">
+                  <span class="course-section-toggle-icon" aria-hidden="true">↑</span>
+                  <span class="visually-hidden">Toggle yardage table</span>
+                </button>
+              </header>
+
+              <div class="course-section-content" aria-hidden="false">
+                <table class="yardage-table">
+                  <thead>
+                    <tr>
+                      <th>Hole</th><th>PAR</th>
+                      <th><span class="tee-marker tee-marker--black" aria-hidden="true"></span></th>
+                      <th><span class="tee-marker tee-marker--gold" aria-hidden="true"></span></th>
+                      <th><span class="tee-marker tee-marker--blue" aria-hidden="true"></span></th>
+                      <th><span class="tee-marker tee-marker--red" aria-hidden="true"></span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>1</td><td>4</td><td>430</td><td>393</td><td>358</td><td>319</td></tr>
+                    <tr><td>2</td><td>3</td><td>190</td><td>190</td><td>170</td><td>148</td></tr>
+                    <tr><td>3</td><td>4</td><td>401</td><td>379</td><td>342</td><td>301</td></tr>
+                    <tr><td>4</td><td>3</td><td>147</td><td>144</td><td>120</td><td>91</td></tr>
+                    <tr><td>5</td><td>5</td><td>542</td><td>504</td><td>478</td><td>424</td></tr>
+                    <tr><td>6</td><td>3</td><td>166</td><td>166</td><td>159</td><td>117</td></tr>
+                    <tr><td>7</td><td>4</td><td>411</td><td>370</td><td>340</td><td>301</td></tr>
+                    <tr><td>8</td><td>4</td><td>305</td><td>282</td><td>282</td><td>252</td></tr>
+                    <tr><td>9</td><td>5</td><td>509</td><td>482</td><td>449</td><td>418</td></tr>
+                    <tr><td>OUT</td><td>35</td><td>3101</td><td>2910</td><td>2698</td><td>2371</td></tr>
+                    <tr><td>10</td><td>5</td><td>581</td><td>560</td><td>534</td><td>499</td></tr>
+                    <tr><td>11</td><td>4</td><td>407</td><td>363</td><td>363</td><td>340</td></tr>
+                    <tr><td>12</td><td>3</td><td>208</td><td>186</td><td>186</td><td>166</td></tr>
+                    <tr><td>13</td><td>5</td><td>538</td><td>510</td><td>510</td><td>478</td></tr>
+                    <tr><td>14</td><td>3</td><td>173</td><td>157</td><td>157</td><td>145</td></tr>
+                    <tr><td>15</td><td>4</td><td>380</td><td>365</td><td>348</td><td>325</td></tr>
+                    <tr><td>16</td><td>5</td><td>493</td><td>474</td><td>431</td><td>417</td></tr>
+                    <tr><td>17</td><td>5</td><td>535</td><td>518</td><td>518</td><td>495</td></tr>
+                    <tr><td>18</td><td>3</td><td>142</td><td>125</td><td>125</td><td>113</td></tr>
+                    <tr><td>IN</td><td>37</td><td>3457</td><td>3258</td><td>3172</td><td>2978</td></tr>
+                    <tr class="totals"><td>TOTAL</td><td>72</td><td>6558</td><td>6168</td><td>5870</td><td>5349</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="course-stats-aside">
+              <section class="course-rating" aria-labelledby="course-rating-heading">
+                <header class="course-stats-header">
+                  <h3 id="course-rating-heading" class="course-stats-subtitle">Course Rating</h3>
+                  <button class="course-section-toggle" type="button" aria-expanded="true">
+                    <span class="course-section-toggle-icon" aria-hidden="true">↑</span>
+                    <span class="visually-hidden">Toggle course rating table</span>
+                  </button>
+                </header>
+
+                <div class="course-section-content" aria-hidden="false">
+                  <table class="course-rating-table">
+                    <thead><tr><th>Marker</th><th>Men</th><th>Women</th></tr></thead>
+                    <tbody>
+                      <tr><td><span class="tee-marker tee-marker--black" aria-hidden="true"></span></td><td>77.2/152</td><td>&ndash;</td></tr>
+                      <tr><td><span class="tee-marker tee-marker--gold" aria-hidden="true"></span></td><td>74.2/145</td><td>&ndash;</td></tr>
+                      <tr><td><span class="tee-marker tee-marker--blue" aria-hidden="true"></span></td><td>71.9/141</td><td>79.4/143</td></tr>
+                      <tr><td><span class="tee-marker tee-marker--red" aria-hidden="true"></span></td><td>66.4/129</td><td>72.7/129</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section class="course-scorecard" aria-labelledby="scorecard-heading">
+                <header class="course-stats-header course-scorecard-header">
+                  <h3 id="scorecard-heading" class="course-stats-subtitle">Scorecard</h3>
+                  <a href="assets/documents/scorecard.pdf" download="Astana-Golf-Club-Scorecard.pdf" class="scorecard-link">View PDF</a>
+                </header>
+              </section>
+          </div>
+        </section>
+
+        <section class="pricing-section" aria-labelledby="pricing-heading">
+          <header class="course-stats-header pricing-section-header"><h2 id="pricing-heading" class="course-stats-title">Prices &amp; Membership</h2></header>
+
+          <div class="pricing-grid">
+            <div class="pricing-column">
+              <section class="pricing-card pricing-card--green" aria-labelledby="green-fees-heading">
+                <div class="pricing-card-head"><h3 id="green-fees-heading" class="pricing-card-title">Price List for Green Fees</h3></div>
+                <div class="pricing-table-wrap" role="region" aria-label="Green fees table" tabindex="0">
+                  <table class="pricing-table">
+                    <colgroup><col class="pricing-col-service"><col class="pricing-col-value"><col class="pricing-col-value"><col class="pricing-col-value"></colgroup>
+                    <thead>
+                      <tr><th scope="col">Service</th><th scope="col">Club Member</th><th scope="col">Member&rsquo;s Guest</th><th scope="col">Regular Guest</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr class="pricing-group-row"><th colspan="4" scope="rowgroup">18 Holes</th></tr>
+                      <tr><th scope="row">Green Fee &ndash; 18 Holes (Weekdays)</th><td class="pricing-free" data-label="Club Member">Free</td><td data-label="Member&rsquo;s Guest">65,000&nbsp;₸</td><td data-label="Regular Guest">80,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Green Fee &ndash; 18 Holes (Weekends &amp; Holidays)</th><td class="pricing-free" data-label="Club Member">Free</td><td data-label="Member&rsquo;s Guest">75,000&nbsp;₸</td><td data-label="Regular Guest">90,000&nbsp;₸</td></tr>
+                      <tr class="pricing-group-row"><th colspan="4" scope="rowgroup">9 Holes</th></tr>
+                      <tr><th scope="row">Green Fee &ndash; 9 Holes (Weekdays)</th><td class="pricing-free" data-label="Club Member">Free</td><td data-label="Member&rsquo;s Guest">35,000&nbsp;₸</td><td data-label="Regular Guest">40,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Green Fee &ndash; 9 Holes (Weekends &amp; Holidays)</th><td class="pricing-free" data-label="Club Member">Free</td><td data-label="Member&rsquo;s Guest">40,000&nbsp;₸</td><td data-label="Regular Guest">55,000&nbsp;₸</td></tr>
+                      <tr class="pricing-group-row"><th colspan="4" scope="rowgroup">Practice &amp; Rentals</th></tr>
+                      <tr><th scope="row">Practice on Driving Range (100 balls)</th><td class="pricing-free" data-label="Club Member">Free</td><td data-label="Member&rsquo;s Guest">10,000&nbsp;₸</td><td data-label="Regular Guest">12,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Golf Cart Rental (18 holes)</th><td data-label="Club Member">15,000&nbsp;₸</td><td data-label="Member&rsquo;s Guest">15,000&nbsp;₸</td><td data-label="Regular Guest">15,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Rental Set of Clubs</th><td class="pricing-free" data-label="Club Member">Free</td><td data-label="Member&rsquo;s Guest">8,000&nbsp;₸</td><td data-label="Regular Guest">10,000&nbsp;₸</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section class="pricing-card pricing-card--lifetime" aria-labelledby="lifetime-memberships-heading">
+                <div class="pricing-card-head"><h3 id="lifetime-memberships-heading" class="pricing-card-title">Selling Lifetime Memberships</h3></div>
+                <div class="pricing-table-wrap" role="region" aria-label="Lifetime memberships table" tabindex="0">
+                  <table class="pricing-simple-table">
+                    <colgroup><col class="pricing-simple-col-item"><col class="pricing-simple-col-price"></colgroup>
+                    <thead><tr><th scope="col">Item</th><th scope="col" class="pricing-col-price">Price</th></tr></thead>
+                    <tbody>
+                      <tr><th scope="row">Individual Lifetime Membership (Only for Season 2025)</th><td class="pricing-col-price">5,000,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Family Lifetime Membership (Only for Season 2025)</th><td class="pricing-col-price">7,000,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Freezing Fee</th><td class="pricing-col-price">200,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Transferring Fee</th><td class="pricing-col-price">300,000&nbsp;₸</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </div>
+
+            <div class="pricing-column">
+              <section class="pricing-card pricing-card--additional" aria-labelledby="additional-services-heading">
+                <div class="pricing-card-head"><h3 id="additional-services-heading" class="pricing-card-title">Additional Services</h3></div>
+                <div class="pricing-table-wrap" role="region" aria-label="Additional services table" tabindex="0">
+                  <table class="pricing-table">
+                    <colgroup><col class="pricing-col-service"><col class="pricing-col-value"><col class="pricing-col-value"><col class="pricing-col-value"></colgroup>
+                    <thead><tr><th scope="col">Service</th><th scope="col">Club Member</th><th scope="col">Member&rsquo;s Guest</th><th scope="col">Regular Guest</th></tr></thead>
+                    <tbody>
+                      <tr><th scope="row">Rental of Parking Space for a Golf Cart</th><td data-label="Club Member">300,000&nbsp;₸</td><td data-label="Member&rsquo;s Guest">300,000&nbsp;₸</td><td data-label="Regular Guest">300,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Golf Cart Washing</th><td data-label="Club Member">3,000&nbsp;₸</td><td data-label="Member&rsquo;s Guest">3,000&nbsp;₸</td><td data-label="Regular Guest">3,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Golf Bag Storage</th><td data-label="Club Member">60,000&nbsp;₸</td><td data-label="Member&rsquo;s Guest">70,000&nbsp;₸</td><td data-label="Regular Guest">70,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Locker Rental in the Changing Room (One Season)</th><td class="pricing-free" data-label="Club Member">Free</td><td data-label="Member&rsquo;s Guest">150,000&nbsp;₸</td><td data-label="Regular Guest">200,000&nbsp;₸</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section class="pricing-card pricing-card--annual" aria-labelledby="annual-fees-heading">
+                <div class="pricing-card-head">
+                  <div class="pricing-card-head-inner">
+                    <h3 id="annual-fees-heading" class="pricing-card-title">Annual Fees</h3>
+                    <p class="pricing-card-note">Only for Season 2025</p>
+                  </div>
+                </div>
+                <div class="pricing-table-wrap" role="region" aria-label="Annual fees table" tabindex="0">
+                  <table class="pricing-simple-table">
+                    <colgroup><col class="pricing-simple-col-item"><col class="pricing-simple-col-price"></colgroup>
+                    <thead><tr><th scope="col">Item</th><th scope="col" class="pricing-col-price">Price</th></tr></thead>
+                    <tbody>
+                      <tr><th scope="row">Individual Annual Fee for Members</th><td class="pricing-col-price">600,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Family Annual Fee for Members</th><td class="pricing-col-price">1,000,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Annual Individual Subscription</th><td class="pricing-col-price">1,100,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Family Annual Subscription</th><td class="pricing-col-price">1,700,000&nbsp;₸</td></tr>
+                      <tr><th scope="row">Junior Annual Subscription (Under 18)</th><td class="pricing-col-price">450,000&nbsp;₸</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div class="hole-modal" id="hole-modal" aria-hidden="true">
+    <div class="hole-modal-backdrop" data-modal-close></div>
+
+    <div class="hole-modal-sheet" role="dialog" aria-modal="true" aria-labelledby="hole-modal-title" aria-describedby="hole-modal-body" tabindex="-1">
+      <button class="hole-modal-close" type="button" aria-label="Close" data-modal-close><span aria-hidden="true">×</span></button>
+
+      <div class="hole-modal-inner">
+        <h2 id="hole-modal-title" class="hole-modal-title">Hole — Placeholder</h2>
+
+        <div class="hole-modal-meta">
+          <p class="hole-modal-subtitle">
+            <span id="hole-modal-par">Par —</span>
+            <span class="hole-modal-divider" aria-hidden="true">·</span>
+            <span id="hole-modal-handicap">Handicap —</span>
+          </p>
+
+          <div class="hole-modal-yardages" aria-label="Tee yardages">
+            <div class="hole-modal-yardage-item" aria-label="Black tee yardage"><span class="tee-marker tee-marker--black" aria-hidden="true"></span><span class="hole-modal-yardage-value" id="hole-yardage-black">—</span></div>
+            <div class="hole-modal-yardage-item" aria-label="Gold tee yardage"><span class="tee-marker tee-marker--gold" aria-hidden="true"></span><span class="hole-modal-yardage-value" id="hole-yardage-gold">—</span></div>
+            <div class="hole-modal-yardage-item" aria-label="Blue tee yardage"><span class="tee-marker tee-marker--blue" aria-hidden="true"></span><span class="hole-modal-yardage-value" id="hole-yardage-blue">—</span></div>
+            <div class="hole-modal-yardage-item" aria-label="Red tee yardage"><span class="tee-marker tee-marker--red" aria-hidden="true"></span><span class="hole-modal-yardage-value" id="hole-yardage-red">—</span></div>
+          </div>
+        </div>
+
+        <div id="hole-modal-body" class="hole-modal-body"><p>placeholder</p><p>placeholder</p></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="site-footer-inner">
+      <div class="footer-main">
+        <div class="footer-left">
+          <a href="index.html" class="footer-logo"><img src="assets/images/branding/logo-white.webp" alt="Astana Golf Club logo" loading="lazy" decoding="async" width="140" height="88"></a>
+          <p class="footer-address">Khayretidin Bolganbaev Street, 1,<br>Astana, Kazakhstan</p>
+          <a class="footer-phone" href="tel:+77029994308">+7 702 999 4308</a>
+        </div>
+
+        <div class="footer-links" aria-label="Footer navigation">
+          <section class="footer-column" aria-labelledby="footer-golf-heading">
+            <h2 id="footer-golf-heading" class="footer-title">Golf</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="golf.html#golf-course-heading">Course Layout</a></li>
+              <li><a class="footer-link" href="golf.html#pricing-heading">Prices</a></li>
+              <li><a class="footer-link" href="golf.html#pricing-heading">Membership</a></li>
+              <li><a class="footer-link" href="golf.html#golf-course-heading">Golfer's Guide</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-column" aria-labelledby="footer-restaurant-heading">
+            <h2 id="footer-restaurant-heading" class="footer-title">Restaurant</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="dining.html#heritage-heading">Menu</a></li>
+              <li><a class="footer-link" href="meetings.html#heritage-heading">Banquets &amp; Events</a></li>
+              <li><a class="footer-link" href="dining.html#heritage-heading">Reservations</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-column" aria-labelledby="footer-about-heading">
+            <h2 id="footer-about-heading" class="footer-title">About</h2>
+            <ul class="footer-nav-list">
+              <li><a class="footer-link" href="about.html#about-our-story">Our Story</a></li>
+              <li><a class="footer-link" href="about.html#about-team">Team</a></li>
+              <li><a class="footer-link" href="about.html#about-careers">Careers</a></li>
+              <li><a class="footer-link" href="about.html#about-heading">Contact Us</a></li>
+              <li><a class="footer-link" href="about.html#faq-section">FAQ</a></li>
+              <li><a class="footer-link" href="tournaments.html">Tournaments</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span class="footer-copy">&copy; Astana Golf Club 2025</span>
+        </div>
+
+        <div class="footer-bottom-right">
+          <a href="https://www.instagram.com/golf_club_astana/" class="footer-social-link" aria-label="Astana Golf Club on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+              <circle cx="12" cy="12" r="5"></circle>
+              <circle cx="17" cy="7" r="1.4"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
